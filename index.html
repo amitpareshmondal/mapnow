@@ -16,26 +16,29 @@
     stroke-dashoffset: 1920;
     animation: dash 20s linear 3s forwards;
 }
-
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
+#loader_img{
+    height: 400px;
+    width: 400px;
+    
+}
+#loader{
+    text-align: center;
+    position: relative;
+    top: 50px;
 }
 </style>
 <body>
-    
-
+<div id="loader">
+    <img src="plane2.gif" alt="" id="loader_img">
+</div>
 <div id="map">
-    
+
 </div>
 </body>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
-<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="MovingMarker.js"></script>
 <script src="index.js"></script>
 
 </html>
